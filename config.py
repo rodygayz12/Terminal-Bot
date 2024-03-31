@@ -4,10 +4,10 @@ import re
 id_pattern = re.compile(r'^.\d+$')
 
 
-token = os.environ.get("TOKEN")
-app_id = int(os.environ.get("APP_ID"))
-app_hash = os.environ.get("API_HASH")
-allowed = [int(user) if id_pattern.search(user) else user for user in os.environ.get('AUTH_USERS', '').split()]
+token = os.environ.get("TOKEN","6861294909:AAEf5aupZPVgBeWmfM864AWcLSoRyutDrnY")
+app_id = int(os.environ.get("APP_ID","21503867"))
+app_hash = os.environ.get("API_HASH","e0e50d95e1319072731fb0a4a585e9d5")
+allowed = [int(user) if id_pattern.search(user) else user for user in os.environ.get('AUTH_USERS', '6221136155').split()]
 
 help_text = """
 Hello I'm Terminal Bot which will Execute your Commands.
